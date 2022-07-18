@@ -20,3 +20,7 @@ Route ::get('/',function() {
 Route ::get('/helo', function() {
    return "Hello World";
 })
+   
+   
+use App\Http\Controllers\ProductController;
+Route ::get('product/display',[ProductController::class,'showAll']);
